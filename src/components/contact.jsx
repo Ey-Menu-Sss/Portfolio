@@ -46,21 +46,21 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="w-[1200px] mx-auto px-6 py-20 z-10 mt-40">
+    <section id="contact" className="w-full max-w-[1200px] mx-auto px-6 py-20 z-10 mt-40">
       <h1 className="text-3xl md:text-4xl font-bold text-center mb-10">
         Contact <span className="text-[#2ef]">Me</span>
       </h1>
 
-      <div className="flex flex-col md:flex-row gap-12 justify-around items-center w-full">
+      <div className="flex gap-12 justify-around items-center w-full">
         <div
           ref={boxRef}
           onMouseMove={handleMouseMove}
           onMouseLeave={handleMouseLeave}
-          className="flex-shrink-0"
+          className="flex-shrink-0 hidden lg:block"
           style={{ perspective: "1000px" }}
         >
           <div
-            className="w-[350px] md:w-[430px] rounded-3xl shadow-lg transition-transform duration-100 ease-linear"
+            className="w-[350px] rounded-3xl shadow-lg transition-transform duration-100 ease-linear"
             style={{ transformStyle: "preserve-3d" }}
           >
             <img
@@ -73,7 +73,7 @@ const Contact = () => {
 
         <form
           onSubmit={handleSubmit}
-          className="bg-[#0a2536] p-8 rounded-2xl shadow-lg w-[40%]"
+          className="w-full max-w-[450px] bg-[#0a2536] p-8 rounded-2xl shadow-lg"
         >
           <div className="mb-5">
             <label className="block mb-2 text-sm font-semibold">

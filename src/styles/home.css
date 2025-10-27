@@ -87,6 +87,19 @@ section.visible {
   font-size: 20px;
   padding-right: 8px;
 }
+
+.dropdown {
+  position: absolute;
+  width: 80%;
+  transform: translateX(100%);
+  opacity: 0;
+  height: calc(100vh - 76px);
+  transition: 1.3s ease-out;
+}
+.dropdown.show {
+  opacity: 1;
+  transform: translateX(-100);
+}
 /* --- Home section styles end.. --- */
 
 /* --- About section styes.. --- */
@@ -102,3 +115,15 @@ section.visible {
 .card-shadow {
   box-shadow: 0 0 40px var(--card-shadow);
 }
+
+.reveal {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: all 0.7s ease-out;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+

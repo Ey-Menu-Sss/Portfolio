@@ -6,11 +6,11 @@ const Footer = () => {
   return (
     <footer className="bg-[#06112a] text-white pt-12 pb-8 z-10">
       {/* Top Section - Let's Work Together */}
-      <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between gap-10">
+      <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-around gap-10">
         {/* Portfolio */}
         <div className="text-center md:text-left">
           <h2 className="text-2xl font-bold mb-2">Let's Work Together</h2>
-          <p className="text-gray-400 max-w-md">
+          <p className="text-gray-400 md:max-w-md">
             Have an idea or project in mind? Let’s collaborate and turn it into
             reality. I’m always open to discussing new projects, creative ideas,
             or opportunities to be part of your vision. Feel free to reach out!
@@ -18,7 +18,7 @@ const Footer = () => {
         </div>
 
         {/* Quick Links */}
-        <div className="text-center md:text-left">
+        <div className="text-center hidden lg:block">
           <h2 className="text-2xl font-bold mb-4">Quick Links</h2>
           {navItems.map((item, index) => (
             <Link

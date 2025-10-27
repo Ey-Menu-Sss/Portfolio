@@ -2,13 +2,13 @@ import React from "react";
 
 const Services = () => {
   return (
-    <section className="z-10 w-[1200px] mx-auto mt-25 pt-25" id="services">
+    <section className="z-10 max-w-[1200px] mx-auto mt-25 pt-25" id="services">
       <h1 className="text-center text-4xl font-bold mb-10">
         My <span className="text-[#2ef]">Services</span>
       </h1>
-      <div className="w-full flex items-center justify-center gap-5 flex-nowrap">
+      <div className="w-full flex items-center justify-center gap-5 p-6 flex-wrap">
         {/* 1st Card */}
-        <div className="relative w-[32%] h-[320px] p-6 bg-[#0a1e2d] rounded-2xl border border-[#123652] shadow-lg hover:shadow-[#2ef]/40 hover:scale-[1.03] transition-all duration-300 flex flex-col justify-between">
+        <div className="reveal flex-1 min-w-[250px] max-w-[350px] p-6 bg-[#0a1e2d] rounded-2xl border border-[#123652] shadow-lg hover:shadow-[#2ef]/40 hover:scale-[1.03] transition-all duration-100">
           <div>
             <i className="bx bx-code-alt text-5xl text-[#2ef] mb-4"></i>
             <h2 className="text-xl font-semibold text-white mb-3">
@@ -26,7 +26,7 @@ const Services = () => {
           </button>
         </div>
         {/* 2nd Card */}
-        <div className="relative w-[32%] h-[320px] p-6 bg-[#0a1e2d] rounded-2xl border border-[#123652] shadow-lg hover:shadow-[#2ef]/40 hover:scale-[1.03] transition-all duration-300 flex flex-col justify-between">
+        <div className="reveal flex-1 min-w-[250px] max-w-[350px] p-6 bg-[#0a1e2d] rounded-2xl border border-[#123652] shadow-lg hover:shadow-[#2ef]/40 hover:scale-[1.03] transition-all duration-100">
           <div>
             <i className="bx bx-desktop text-5xl text-[#2ef] mb-4"></i>
             <h2 className="text-xl font-semibold text-white mb-3">
@@ -44,7 +44,7 @@ const Services = () => {
           </button>
         </div>
         {/* 3rd Card */}
-        <div className="relative w-[32%] h-[320px] p-6 bg-[#0a1e2d] rounded-2xl border border-[#123652] shadow-lg hover:shadow-[#2ef]/40 hover:scale-[1.03] transition-all duration-300 flex flex-col justify-between">
+        <div className="reveal flex-1 min-w-[250px] max-w-[350px] p-6 bg-[#0a1e2d] rounded-2xl border border-[#123652] shadow-lg hover:shadow-[#2ef]/40 hover:scale-[1.03] transition-all duration-100">
           <div>
             <i className="bx bx-paint text-5xl text-[#2ef] mb-4"></i>
             <h2 className="text-xl font-semibold text-white mb-3">

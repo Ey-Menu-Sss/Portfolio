@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import HomePicture from "../assets/myPicture.jpg";
+import { Link } from "react-router-dom";
 
 const About = () => {
   const boxRef = useRef(null);
@@ -26,7 +27,7 @@ const About = () => {
     const inner = box.querySelector("div");
     inner.style.transform = "rotateX(0deg) rotateY(0deg) scale(1)";
   };
-  
+
   return (
     <section
       id="about"
@@ -37,11 +38,11 @@ const About = () => {
         ref={boxRef}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
-        className="flex-shrink-0"
+        className="reveal flex-shrink-0"
         style={{ perspective: "1000px" }}
       >
         <div
-          className="w-[350px] md:w-[400px] rounded-3xl shadow-lg transition-transform duration-100 ease-linear"
+          className="w-full max-w-[350px] md:w-[400px] rounded-3xl shadow-lg transition-transform duration-100 ease-linear"
           style={{ transformStyle: "preserve-3d" }}
         >
           <img
@@ -53,23 +54,26 @@ const About = () => {
       </div>
 
       {/* Text Content */}
-      <div className="text-center md:text-left">
+      <div className="reveal text-center md:text-left">
         <h1 className="text-3xl font-bold text-white mb-2">
           About <span className="text-[#2ef]">Me</span>
         </h1>
         <h2 className="text-2xl md:text-3xl text-gray-200 font-semibold mb-6">
           Full Stack Developer
         </h2>
-        <p className="text-gray-300 leading-relaxed max-w-[600px]">
+        <p className="text-gray-300 leading-relaxed max-w-[600px] mb-6">
           I’m a passionate Full Stack Developer who loves building interactive
           and efficient web applications. I enjoy transforming ideas into real
           projects using clean code, modern design, and a strong attention to
           detail. My goal is to create digital experiences that are fast,
           beautiful, and intuitive.
         </p>
-        <button className="mt-8 px-6 py-2 bg-[#2ef] text-[#081c29] cursor-pointer font-semibold rounded-full shadow-md hover:bg-[#22d3c5] transition-all duration-300">
+        <Link
+          to={"https://t.me/XataSeniorito"}
+          className="reveal px-6 py-2 bg-[#2ef] text-[#081c29] cursor-pointer font-semibold rounded-full shadow-md hover:bg-[#22d3c5] transition-all duration-300"
+        >
           More About Me
-        </button>
+        </Link>
       </div>
     </section>
   );
