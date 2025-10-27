@@ -1,0 +1,58 @@
+[
+    {
+        "img": "bxl-html5",
+        "name": "HTML"
+    },
+    {
+        "img": "bxl-css3",
+        "name": "CSS"
+    },
+    {
+        "img": "bxl-tailwind-css",
+        "name": "Tailwind CSS"
+    },
+    {
+        "img": "bxl-javascript",
+        "name": "JavaScript (ES6+)"
+    },
+    {
+        "img": "bxl-react",
+        "name": "React.js"
+    },
+    {
+        "img": "bx-mobile-alt",
+        "name": "Responsive Design"
+    },
+    {
+        "img": "bx-palette",
+        "name": "UI/UX Basics"
+    },
+    {
+        "img": "bxl-python",
+        "name": "Python"
+    },
+    {
+        "img": "bxl-django",
+        "name": "Django"
+    },
+    {
+        "img": "bx-link-alt",
+        "name": "RESTful APIs"
+    },
+    {
+        "img": "bxl-github",
+        "name": "Git & GitHub"
+    },
+    {
+        "img": "bx-package",
+        "name": "npm / yarn"
+    },
+    {
+        "img": "bx-bolt-circle",
+        "name": "Vite"
+    },
+    {
+        "img": "bxl-netlify",
+        "name": "Netlify"
+    }
+]

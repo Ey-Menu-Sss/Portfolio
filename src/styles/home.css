@@ -1,0 +1,104 @@
+body {
+  overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+#particles {
+  z-index: -1;
+}
+
+section {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 0.6s ease-out;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --- Header styles.. ---- */
+.nav-items .li:hover {
+  color: var(--primary);
+  text-shadow: 0 0 10px var(--primary);
+  transition: all 0.2s ease;
+}
+
+.logo {
+  animation: slideRight 1s ease forwards;
+}
+.logo:hover {
+  text-shadow: 0 0 20px var(--primary);
+}
+/* --- Header styles end.. ---- */
+
+/* --- Home styles.. --- */
+.picture-shadow {
+  border: 4px solid white;
+  background: linear-gradient(45deg, #51f1ff, #3fc0e4, #00ffea);
+  box-shadow: 0 0 200px rgba(81, 241, 255, 0.6),
+    0 0 200px rgba(74, 255, 192, 0.4), 0 0 200px rgba(50, 238, 255, 0.3);
+  animation: slideLeft 1s ease forwards;
+}
+
+.slideBottom {
+  opacity: 0;
+  animation: slideBottom 1s ease forwards;
+  /* animation-delay: 0.5s; */
+}
+.slideTop {
+  opacity: 0;
+  animation: slideTop 1s ease forwards;
+  animation-delay: 0.5s;
+}
+.slideRight {
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
+  animation-delay: 0.7s;
+}
+.slideLeft {
+  opacity: 0;
+  animation: slideLeft 1s ease forwards;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--primary);
+  padding: 6px;
+  border-radius: 50%;
+  color: var(--primary);
+  font-size: 22px;
+  opacity: 0;
+  animation: slideLeft 1s ease forwards;
+  animation-delay: 0.7s;
+  transition: all 0.2s ease;
+}
+.social-icon:hover {
+  background-color: var(--primary);
+  color: black;
+  box-shadow: 0 0 20px var(--primary);
+}
+.social-icon:last-child {
+  font-size: 20px;
+  padding-right: 8px;
+}
+/* --- Home section styles end.. --- */
+
+/* --- About section styes.. --- */
+.shadow-primary {
+  box-shadow: 0 0 20px var(--primary);
+}
+.shadow-primary:hover {
+  box-shadow: 0 0 30px var(--primary);
+}
+/* --- About section styes end.. --- */
+
+/* --- Services section styes.. --- */
+.card-shadow {
+  box-shadow: 0 0 40px var(--card-shadow);
+}
