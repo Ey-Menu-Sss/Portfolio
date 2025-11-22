@@ -11,7 +11,7 @@ export const projects = [
     },
     {
         name: "DevConnector",
-        url: "https://zippy-queijadas-785661.netlify.app/",
+        url: "https://wortex-devconnector.netlify.app/",
         image: DevConnector
     },
     {
