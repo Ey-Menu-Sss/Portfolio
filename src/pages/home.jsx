@@ -8,11 +8,14 @@ import Skills from "../components/skills.jsx";
 import Project from "../components/project.jsx";
 import Contact from "../components/contact.jsx";
 import Footer from "../components/footer.jsx";
+import ResumeDownload from "../components/resumeDownload.jsx";
 
 const Home = () => {
   const [showParticles, setShowParticles] = useState(true);
+  const [showResume, setShowResume] = useState(false);
+  const resumeShown = React.useRef(false);
 
-  // --- Intersection Observer ---
+  // --- Intersection Observer for sections ---
   useEffect(() => {
     const sections = document.querySelectorAll("section");
 
@@ -24,15 +27,20 @@ const Home = () => {
           if (entry.isIntersecting) {
             entry.target.classList.add("visible");
 
-            if (id === "home" || id === "about") {
-              setShowParticles(true);
-            } else setShowParticles(false);
+            if (id === "home") setShowParticles(true);
+            else setShowParticles(false);
+
+            // Show resume popup when reaching Projects
+            if (id === "project" && !resumeShown.current) {
+              resumeShown.current = true;
+              setShowResume(true);
+            }
           } else {
             entry.target.classList.remove("visible");
           }
         });
       },
-      { threshold: 0.1 }
+      { threshold: 0.2 }
     );
 
     sections.forEach((section) => observer.observe(section));
@@ -47,11 +55,8 @@ const Home = () => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-          } else {
-            entry.target.classList.remove("visible");
-          }
+          if (entry.isIntersecting) entry.target.classList.add("visible");
+          else entry.target.classList.remove("visible");
         });
       },
       { threshold: 0.3 }
@@ -64,36 +69,25 @@ const Home = () => {
 
   return (
     <div className="bg-[#081c29] text-white flex flex-col min-h-screen">
-      {/* --- Particles --- */}
+      {/* Particles */}
       {showParticles && (
-        <div className={`absolute top-0 left-0 w-full h-full transition-all duration-1000`}>
+        <div className="absolute top-0 left-0 w-full h-full transition-all duration-1000">
           <Particles id="particles" />
         </div>
       )}
 
-      {/* --- Header --- */}
+      {/* Sections */}
       <Header />
-
-      {/* --- Home section --- */}
       <HomeSection />
-
-      {/* --- About section --- */}
       <About />
-
-      {/* --- Services section --- */}
       <Services />
-
-      {/* --- Skills section --- */}
       <Skills />
-
-      {/* --- Project section --- */}
       <Project />
-
-      {/* --- Contact section --- */}
       <Contact />
-
-      {/* Footer */}
       <Footer />
+
+      {/* Resume Popup */}
+      <ResumeDownload show={showResume} onClose={() => setShowResume(false)} />
     </div>
   );
 };

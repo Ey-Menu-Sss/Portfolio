@@ -1,4 +1,5 @@
 import React, { useState, useRef } from "react";
+import emailjs from "emailjs-com";
 import ContactMe from "../assets/contactme.png";
 
 const Contact = () => {
@@ -16,9 +17,9 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
 
-    alert("Thanks for reaching out! I’ll get back to you soon.");
+    emailjs.send("service_f6dk5xg", "template_am8nldo", formData, "A4TwqVAKTlbtl0UzN")
+    
     setFormData({ name: "", email: "", message: "" });
   };
 

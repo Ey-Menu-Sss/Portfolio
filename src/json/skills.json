@@ -20,6 +20,18 @@
         "name": "React.js"
     },
     {
+        "img": "bxl-nodejs",
+        "name": "NodeJs"
+    },
+    {
+        "img": "bx bx-plug",
+        "name": "WebSockets"
+    },
+    {
+        "img": "bx bx-camera",
+        "name": "WebRTC"
+    },
+    {
         "img": "bx-mobile-alt",
         "name": "Responsive Design"
     },
@@ -54,5 +66,9 @@
     {
         "img": "bxl-netlify",
         "name": "Netlify"
+    },
+    {
+        "img": "bxl-aws",
+        "name": "AWS services"
     }
 ]

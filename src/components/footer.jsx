@@ -15,6 +15,13 @@ const Footer = () => {
             reality. I’m always open to discussing new projects, creative ideas,
             or opportunities to be part of your vision. Feel free to reach out!
           </p>
+          <a
+            href="/resume.pdf"
+            download
+            className="mt-4 inline-block px-6 py-2 bg-[var(--primary)] text-[var(--bg-color)] font-medium rounded-full hover:bg-[#1cd9c3] transition-colors duration-300"
+          >
+            Download Resume
+          </a>
         </div>
 
         {/* Quick Links */}
@@ -70,21 +77,6 @@ const Footer = () => {
           </span>
           . All rights reserved.
         </p>
-
-        {/* <div className="flex gap-5 text-lg mt-3 md:mt-0">
-          <a href="https://github.com/YourUsername" target="_blank" rel="noreferrer" className="hover:text-[#2ef] transition">
-            <i className="bx bxl-github"></i>
-          </a>
-          <a href="https://linkedin.com/in/YourProfile" target="_blank" rel="noreferrer" className="hover:text-[#2ef] transition">
-            <i className="bx bxl-linkedin-square"></i>
-          </a>
-          <a href="https://t.me/eymenus" target="_blank" rel="noreferrer" className="hover:text-[#2ef] transition">
-            <i className="bx bxl-telegram"></i>
-          </a>
-          <a href="https://t.me/YourTelegram" target="_blank" rel="noreferrer" className="hover:text-[#2ef] transition">
-            <i className="bx bxl-youtube"></i>
-          </a>
-        </div> */}
       </div>
     </footer>
   );
