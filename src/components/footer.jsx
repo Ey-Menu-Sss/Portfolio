@@ -16,7 +16,7 @@ const Footer = () => {
             or opportunities to be part of your vision. Feel free to reach out!
           </p>
           <a
-            href="/MMM.Resume.pdf"
+            href="/Resume.pdf"
             download
             className="mt-4 inline-block px-6 py-2 bg-[var(--primary)] text-[var(--bg-color)] font-medium rounded-full hover:bg-[#1cd9c3] transition-colors duration-300"
           >

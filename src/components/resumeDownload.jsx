@@ -49,7 +49,7 @@ const ResumeDownload = ({ show, onClose }) => {
 
         {/* Download Button */}
         <a
-          href="/MMM.Resume.pdf"
+          href="/Resume.pdf"
           download
           className="block w-full text-center bg-[var(--primary)] text-[var(--bg-color)] py-2.5 rounded-full font-medium hover:bg-[#1cd9c3] transition-colors duration-300"
         >
